@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on the Store View
 
-        View store = (View) findViewById(R.id.numbers);
+        View store = (View) findViewById(R.id.store);
         store.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
@@ -50,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         View playNow = (View) findViewById(R.id.playNow);
         playNow.setOnClickListener(new OnClickListener() {
+
             @Override
             public void onClick(View view) {
               // Create a new intent to open the {@link RadioActivity}
@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
               startActivity(playNowIntent);
             }
         });
-
 
     }
 }
