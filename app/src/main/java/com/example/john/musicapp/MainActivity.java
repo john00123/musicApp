@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Set a click listener on the Store View
-
         View store = (View) findViewById(R.id.store);
         store.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Set a click listener on the Radio View
-
         View radio = (View) findViewById(R.id.radio);
         radio.setOnClickListener(new OnClickListener() {
             @Override
